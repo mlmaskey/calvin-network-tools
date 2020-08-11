@@ -1,7 +1,6 @@
 'use strict';
-
-var assert = require('assert');
-var fs = require('fs');
+const assert = require('assert');
+// var fs = require('fs');  // fs no longer exists - need to fix this test to use something else to write data out
 
 describe('testing matrix', function() {
 
@@ -12,9 +11,8 @@ describe('testing matrix', function() {
     matrix = require('../../nodejs/matrix');
 
     config = {
-      separator : ".",
-      path : '/home/quinn/calvin-network-data/data',
-      //path : '/Users/jrmerz/dev/watershed/calvin-network-data/data',
+      separator : '.',
+      path : '../../../calvin-network-data/data',
       start: '2001-08-01',
       end: '2001-10-01'
     };
@@ -40,7 +38,8 @@ describe('testing matrix', function() {
               console.log(line);
             });
             if (false) {
-              fs.writeFileSync(name + '.dat', data.join("\n")+"\n");
+                // see comment where at top near fs require statement
+                // fs.writeFileSync(name + '.dat', data.join("\n")+"\n");
             }
             next();
           });
