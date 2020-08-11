@@ -12,7 +12,7 @@ describe('testing matrix', function() {
 
     config = {
       separator : '.',
-      path : '../../../calvin-network-data/data',
+      data : '../calvin-network-data/data',
       start: '2001-08-01',
       end: '2001-10-01'
     };

@@ -1,7 +1,7 @@
 'use strict';
 
 var assert = require('assert');
-var fs=require("fs");
+// var fs=require("fs"); // module no longer exists
 
 describe('testing matrix', function() {
 
@@ -12,13 +12,12 @@ describe('testing matrix', function() {
     matrix = require('../../nodejs/matrix');
 
     config = {
-      "field-sep" : ".",
-      data : '/home/quinn/calvin-network-data/data',
-      //path : '/Users/jrmerz/dev/watershed/calvin-network-data/data',
-      start: '2001-08-01',
-      end: '2001-10-01',
-      fs: "\t",
-      ts: '.'
+        separator : '.',
+        data : '../calvin-network-data/data',
+        start: '2001-08-01',
+        end: '2001-10-01',
+        fs: "\t",
+        ts: '.'
     };
 
   });
@@ -42,7 +41,7 @@ describe('testing matrix', function() {
               console.log(line);
             });
             if (true) {
-              fs.writeFileSync(name + '.dat', data.join("\n")+"\n");
+              // fs.writeFileSync(name + '.dat', data.join("\n")+"\n");
             }
             next();
           });
