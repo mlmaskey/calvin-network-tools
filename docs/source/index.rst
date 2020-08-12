@@ -9,7 +9,9 @@ Welcome to Calvin Network Tools's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
+   
+   Installation of Calvin Network Tools
+   
    matrix
 
 
