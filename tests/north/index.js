@@ -14,7 +14,7 @@ describe('testing cnf-matrix', function() {
 
     config = {
       separator : '.',
-      data : '../calvin-network-data/data',
+      data : process.env.CI ? '../../../calvin-network-data/data' : '../calvin-network-data/data',  // use a different test data path when running in Continuous Integration
       start: '2001-09-15',
       end: '2002-10-15'
     };
