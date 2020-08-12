@@ -13,7 +13,7 @@ describe('testing matrix', function() {
 
     config = {
         separator : '.',
-        data : process.env.CI ? '../../../calvin-network-data/data' : '../calvin-network-data/data',  // use a different test data path when running in Continuous Integration
+        data : process.env.CI ? '../../calvin-network-data/data' : '../calvin-network-data/data',  // use a different test data path when running in Continuous Integration
         start: '2001-08-01',
         end: '2001-10-01',
         fs: "\t",
