@@ -27,7 +27,7 @@ jobs:
     - name: Install Git and clone calvin-network-data
       run: |
         sudo apt-get install git
-        git clone https://github.com/ucd-cws/calvin-network-data
+        git clone https://github.com/ucd-cws/calvin-network-data /home/runner/work/calvin-network-data
     - name: Run install for current package
       run: npm ci
     - name: Install mocha testing framework
