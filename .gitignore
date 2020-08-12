@@ -1,4 +1,5 @@
 .idea/*
+docs/build/*
 
 __MACOSX
 HEC_Runtime

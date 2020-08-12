@@ -36,6 +36,31 @@ extensions = [
 
 primary_domain = 'js'  # mark this as a Javascript project instead of a Python project
 
+# set up the directories to scan for JS files
+root_for_relative_js_paths = "../../"
+js_source_path = [
+    '../../bin',
+    '../../bin/cmds',
+    '../../bin/cmds/apply-changes-cmds',
+    '../../bin/cmds/hec-prm-cmds',
+    '../../bin/cmds/hec-prm-cmds/debug-cmds',
+    '../../bin/cmds/library-cmds',
+    '../../utils/networkInit',
+    '../../nodejs',
+    '../../nodejs/cmds',
+    '../../nodejs/cmds/update-repo',
+    '../../nodejs/dss',
+    '../../nodejs/excel',
+    '../../nodejs/lib',
+    '../../nodejs/matrix',
+    '../../nodejs/matrix/utils',
+    '../../nodejs/pri',
+    '../../nodejs/pri/debugger',
+    '../../nodejs/pri/format',
+    '../../nodejs/shorthand',
+    '../../nodejs/update-from-csv',
+]
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 

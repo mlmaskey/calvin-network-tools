@@ -18,6 +18,11 @@ var link = require('./link');
 var node = require('./node');
 var debug = require('../lib/debug');
 
+/**
+ * Enter the Matrix!
+ * @param config
+ * @param callback
+ */
 function matrix(config, callback) {
   require('./mconfig')(config); // set the config
   //    console.log('Reading network...');

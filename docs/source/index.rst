@@ -10,6 +10,8 @@ Welcome to Calvin Network Tools's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   matrix
+
 
 
 Indices and tables
